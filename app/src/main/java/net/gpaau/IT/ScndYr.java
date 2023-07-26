@@ -5,7 +5,7 @@ import androidx.annotation.Nullable;
 import net.gpaau.GradeIO.GradeIO;
 
 public class ScndYr {
-	//Calculating marks for 2nd year Faculty of Information and Communication ADS Engg
+	//Calculating marks for 2nd year Faculty of Information and Communication IT Engg
 	GradeIO grd = new GradeIO();
 	//Calculating marks for Odd Semester
 	public double GPA_odd(String ma3354, String cs3351, String cs3352, String cd3291, String cs3391, String cd3281, String cs3381, String cs3361, String ge3361) {
