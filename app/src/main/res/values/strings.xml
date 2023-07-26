@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GPAForAU</string>
+    <string-array name="grade">
+        <item>O</item>
+        <item>A+</item>
+        <item>A</item>
+        <item>B+</item>
+        <item>B</item>
+        <item>C</item>
+        <item>RA</item>
+        <item>SH</item>
+        <item>WH</item>
+    </string-array>
+</resources>
