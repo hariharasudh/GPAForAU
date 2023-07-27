@@ -120,6 +120,28 @@ public class GradeIO {
 		}
 		return sub1;
 	}
+	public double Grade_10(String s) {
+		switch (s) {
+			case "O":
+				sub1 = 10*10;
+				break;
+			case "A+":
+				sub1 = 10*9;
+				break;
+			case "A":
+				sub1 = 10*8;
+				break;
+			case "B+":
+				sub1 = 10*7;
+				break;
+			case "B":
+				sub1 = 10*6;
+				break;
+			default:
+				sub1 = 0;
+		}
+		return sub1;
+	}
 	//Rounding off Purposes
 	public double round_off(double nmb){
 		return new BigDecimal(Double.toString(nmb)).setScale(3,RoundingMode.HALF_UP).doubleValue();
