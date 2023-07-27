@@ -13,6 +13,30 @@
         android:theme="@style/Theme.Material3.DayNight"
         tools:targetApi="31">
         <activity
+            android:name=".adsYear8Sem8"
+            android:exported="false" />
+        <activity
+            android:name=".adsYear1Sem7"
+            android:exported="false" />
+        <activity
+            android:name=".adsYear1Sem6"
+            android:exported="false" />
+        <activity
+            android:name=".adsYear1Sem5"
+            android:exported="false" />
+        <activity
+            android:name=".adsYear1sem4"
+            android:exported="false" />
+        <activity
+            android:name=".adsYear3Sem3"
+            android:exported="false" />
+        <activity
+            android:name=".adsYear2Sem2"
+            android:exported="false" />
+        <activity
+            android:name=".adsYear1Sem1"
+            android:exported="false" />
+        <activity
             android:name=".eceSemester"
             android:exported="false" />
         <activity
