@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".adsYear1sem4">
+    tools:context=".ADS_F.adsYear2sem4">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
