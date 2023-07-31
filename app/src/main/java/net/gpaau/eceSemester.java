@@ -1,19 +1,12 @@
 package net.gpaau;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import net.gpaau.CSE_F.cseYear1Sem1;
-import net.gpaau.CSE_F.cseYear1Sem2;
-import net.gpaau.CSE_F.cseYear2Sem3;
-import net.gpaau.CSE_F.cseYear2Sem4;
-import net.gpaau.CSE_F.cseYear3Sem5;
-import net.gpaau.CSE_F.cseYear3Sem6;
-import net.gpaau.CSE_F.cseYear4Sem7;
+import androidx.appcompat.app.AppCompatActivity;
+
 import net.gpaau.ECE_F.eceYear1Sem1;
 import net.gpaau.ECE_F.eceYear1Sem2;
 import net.gpaau.ECE_F.eceYear2Sem3;
@@ -57,53 +50,19 @@ public class eceSemester extends AppCompatActivity {
 		isem7=new Intent(this, eceYear4Sem7.class);
 
 
-		sem1.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				startActivity(isem1);
-			}
-		});
-		sem2.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				startActivity(isem2);
-			}
-		});
+		sem1.setOnClickListener(v -> startActivity(isem1));
 
-		sem3.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				startActivity(isem4);
-			}
-		});
+		sem2.setOnClickListener(v -> startActivity(isem2));
 
-		sem4.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				startActivity(isem4);
-			}
-		});
+		sem3.setOnClickListener(v -> startActivity(isem4));
 
-		sem5.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				startActivity(isem5);
-			}
-		});
+		sem4.setOnClickListener(v -> startActivity(isem4));
 
-		sem6.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				startActivity(isem6);
-			}
-		});
+		sem5.setOnClickListener(v -> startActivity(isem5));
 
-		sem7.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				startActivity(isem7);
-			}
-		});
+		sem6.setOnClickListener(v -> startActivity(isem6));
+
+		sem7.setOnClickListener(v -> startActivity(isem7));
 
 	}
 }

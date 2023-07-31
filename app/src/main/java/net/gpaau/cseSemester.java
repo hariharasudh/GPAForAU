@@ -48,52 +48,18 @@ public class cseSemester extends AppCompatActivity {
         isem7=new Intent(this, cseYear4Sem7.class);
 
 
-        sem1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(isem1);
-            }
-        });
-        sem2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(isem2);
-            }
-        });
+        sem1.setOnClickListener(v -> startActivity(isem1));
 
-        sem3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(isem4);
-            }
-        });
+        sem2.setOnClickListener(v -> startActivity(isem2));
 
-        sem4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(isem4);
-            }
-        });
+        sem3.setOnClickListener(v -> startActivity(isem4));
 
-        sem5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(isem5);
-            }
-        });
+        sem4.setOnClickListener(v -> startActivity(isem4));
 
-        sem6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(isem6);
-            }
-        });
+        sem5.setOnClickListener(v -> startActivity(isem5));
 
-        sem7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(isem7);
-            }
-        });
+        sem6.setOnClickListener(v -> startActivity(isem6));
+
+        sem7.setOnClickListener(v -> startActivity(isem7));
     }
 }

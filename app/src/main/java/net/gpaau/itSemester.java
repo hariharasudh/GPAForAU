@@ -1,19 +1,11 @@
 package net.gpaau;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
-import net.gpaau.ECE_F.eceYear1Sem1;
-import net.gpaau.ECE_F.eceYear1Sem2;
-import net.gpaau.ECE_F.eceYear2Sem3;
-import net.gpaau.ECE_F.eceYear2Sem4;
-import net.gpaau.ECE_F.eceYear3Sem5;
-import net.gpaau.ECE_F.eceYear3Sem6;
-import net.gpaau.ECE_F.eceYear4Sem7;
+import androidx.appcompat.app.AppCompatActivity;
+
 import net.gpaau.IT_F.itYear1Sem1;
 import net.gpaau.IT_F.itYear1Sem2;
 import net.gpaau.IT_F.itYear2Sem3;
@@ -56,55 +48,19 @@ public class itSemester extends AppCompatActivity {
         isem7=new Intent(this, itYear4Sem7.class);
 
 
-        sem1.setOnClickListener(new View.OnClickListener() {
+        sem1.setOnClickListener(v -> startActivity(isem1));
 
-            @Override
-            public void onClick(View v) {
-                startActivity(isem1);
-            }
-        });
+        sem2.setOnClickListener(v -> startActivity(isem2));
 
-        sem2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(isem2);
-            }
-        });
+        sem3.setOnClickListener(v -> startActivity(isem4));
 
-        sem3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(isem4);
-            }
-        });
+        sem4.setOnClickListener(v -> startActivity(isem4));
 
-        sem4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(isem4);
-            }
-        });
+        sem5.setOnClickListener(v -> startActivity(isem5));
 
-        sem5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(isem5);
-            }
-        });
+        sem6.setOnClickListener(v -> startActivity(isem6));
 
-        sem6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(isem6);
-            }
-        });
-
-        sem7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(isem7);
-            }
-        });
+        sem7.setOnClickListener(v -> startActivity(isem7));
 
 
     }
