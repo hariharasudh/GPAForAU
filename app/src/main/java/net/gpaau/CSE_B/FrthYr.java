@@ -1,4 +1,4 @@
-package net.gpaau.CSE;
+package net.gpaau.CSE_B;
 
 import net.gpaau.GradeIO.GradeIO;
 

@@ -1,4 +1,4 @@
-package net.gpaau.ECE;
+package net.gpaau.ECE_B;
 
 import androidx.annotation.Nullable;
 

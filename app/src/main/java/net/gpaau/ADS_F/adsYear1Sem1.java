@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import net.gpaau.ADS.FrthYr;
-import net.gpaau.ADS.FstYr;
 import net.gpaau.R;
 
 public class adsYear1Sem1 extends AppCompatActivity {

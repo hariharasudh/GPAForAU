@@ -1,4 +1,4 @@
-package net.gpaau.Mech;
+package net.gpaau.Mech_B;
 
 import androidx.annotation.Nullable;
 

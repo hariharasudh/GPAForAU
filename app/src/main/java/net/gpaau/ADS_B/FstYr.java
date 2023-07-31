@@ -1,4 +1,4 @@
-package net.gpaau.ADS;
+package net.gpaau.ADS_B;
 
 import androidx.annotation.Nullable;
 
