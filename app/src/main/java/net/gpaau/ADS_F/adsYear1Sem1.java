@@ -1,11 +1,11 @@
-package net.gpaau.ADS_F;
 
+
+package net.gpaau.ADS_F;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.Spinner;
-
 import net.gpaau.ADS_B.FstYr;
 import net.gpaau.R;
 import java.lang.*;
@@ -14,6 +14,7 @@ public class adsYear1Sem1 extends AppCompatActivity {
     Spinner HS3152,MA3151,PH3151,CY3151,GE3151,GE3152,GE3171,BS3171,GE3172;
     String HS3152Value,MA3151Value,PH3151Value,CY3151Value,GE3151Value,GE3152Value,GE3171Value,BS3171Value,GE3172Value;
 
+    Button calculate;
     AlertDialog.Builder alrt = new AlertDialog.Builder(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,11 @@ public class adsYear1Sem1 extends AppCompatActivity {
         GE3171=findViewById(R.id.spinner2);
         BS3171=findViewById(R.id.spinner1);
         GE3172=findViewById(R.id.spinner9);
+
+        calculate=findViewById(R.id.button9);
+
+
+
 
         HS3152Value= (String) HS3152.getSelectedItem();
         MA3151Value = (String) MA3151.getSelectedItem();
