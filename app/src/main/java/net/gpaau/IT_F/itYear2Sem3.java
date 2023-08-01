@@ -10,7 +10,7 @@ public class itYear2Sem3 extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstance){
 		super.onCreate(savedInstance);
-		setContentView(R.layout.activity_it_year1_sem1);
+		setContentView(R.layout.activity_it_year2_sem3);
 
 	}
 }

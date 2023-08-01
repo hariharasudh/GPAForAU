@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ADS_F.adsYear1Sem1">
+    tools:context=".MECH_F.mechYear3Sem6">
 
     <TextView
         android:id="@+id/textView2"
