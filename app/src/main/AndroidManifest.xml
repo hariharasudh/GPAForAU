@@ -10,8 +10,29 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Material3.DayNight"
+        android:theme="@style/Theme.Material3.DayNight.NoActionBar"
         tools:targetApi="31">
+        <activity
+            android:name=".CSE_F.cseYear4Sem7"
+            android:exported="false" />
+        <activity
+            android:name=".CSE_F.cseYear3Sem6"
+            android:exported="false" />
+        <activity
+            android:name=".CSE_F.cseYear3Sem5"
+            android:exported="false" />
+        <activity
+            android:name=".CSE_F.cseYear2Sem4"
+            android:exported="false" />
+        <activity
+            android:name=".CSE_F.cseYear2Sem3"
+            android:exported="false" />
+        <activity
+            android:name=".CSE_F.cseYear1Sem2"
+            android:exported="false" />
+        <activity
+            android:name=".CSE_F.cseYear1Sem1"
+            android:exported="false" />
         <activity
             android:name=".ADS_F.adsYear4Sem7"
             android:exported="false" />
@@ -47,6 +68,69 @@
             android:exported="false" />
         <activity
             android:name=".cseSemester"
+            android:exported="false" />
+        <activity
+            android:name=".ECE_F.eceYear1Sem1"
+            android:exported="false" />
+        <activity
+            android:name=".ECE_F.eceYear1Sem2"
+            android:exported="false" />
+        <activity
+            android:name=".ECE_F.eceYear2Sem3"
+            android:exported="false" />
+        <activity
+            android:name=".ECE_F.eceYear2Sem4"
+            android:exported="false" />
+        <activity
+            android:name=".ECE_F.eceYear3Sem5"
+            android:exported="false" />
+        <activity
+            android:name=".ECE_F.eceYear3Sem6"
+            android:exported="false" />
+        <activity
+            android:name=".ECE_F.eceYear4Sem7"
+            android:exported="false" />
+        <activity
+            android:name=".IT_F.itYear1Sem1"
+            android:exported="false" />
+        <activity
+            android:name=".IT_F.itYear1Sem2"
+            android:exported="false" />
+        <activity
+            android:name=".IT_F.itYear2Sem3"
+            android:exported="false" />
+        <activity
+            android:name=".IT_F.itYear2Sem4"
+            android:exported="false" />
+        <activity
+            android:name=".IT_F.itYear3Sem5"
+            android:exported="false" />
+        <activity
+            android:name=".IT_F.itYear3Sem6"
+            android:exported="false" />
+        <activity
+            android:name=".IT_F.itYear4Sem7"
+            android:exported="false" />
+        <activity
+            android:name=".MECH_F.mechYear1Sem1"
+            android:exported="false" />
+        <activity
+            android:name=".MECH_F.mechYear1Sem2"
+            android:exported="false" />
+        <activity
+            android:name=".MECH_F.mechYear2Sem3"
+            android:exported="false" />
+        <activity
+            android:name=".MECH_F.mechYear2Sem4"
+            android:exported="false" />
+        <activity
+            android:name=".MECH_F.mechYear3Sem5"
+            android:exported="false" />
+        <activity
+            android:name=".MECH_F.mechYear3Sem6"
+            android:exported="false" />
+        <activity
+            android:name=".MECH_F.mechYear4Sem7"
             android:exported="false" />
         <activity
             android:name=".home"
