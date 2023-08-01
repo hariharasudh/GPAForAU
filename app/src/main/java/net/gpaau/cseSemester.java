@@ -1,11 +1,10 @@
 package net.gpaau;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import net.gpaau.CSE_F.cseYear1Sem1;
 import net.gpaau.CSE_F.cseYear1Sem2;

@@ -35,7 +35,7 @@ public class aidsSemester extends AppCompatActivity {
 		sem6 = findViewById(R.id.button4);
 		sem7 = findViewById(R.id.button3);
 
-        //Creating a instance from selection of semester tom grade fillup
+        //Creating a instance from selection of semester tom grade fill-up
 		isem1 = new Intent(this, adsYear1Sem1.class);
 
 		isem2 = new Intent(this, adsYear1Sem2.class);
