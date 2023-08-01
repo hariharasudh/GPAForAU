@@ -2,8 +2,8 @@ package net.gpaau.ADS_F;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.Toast;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import net.gpaau.ADS_B.FstYr;
@@ -14,7 +14,7 @@ public class adsYear1Sem1 extends AppCompatActivity {
 //    String HS3152Value,MA3151Value,PH3151Value,CY3151Value,GE3151Value,GE3152Value,GE3171Value,BS3171Value,GE3172Value;
 
     Button calculate;
-    AlertDialog.Builder alrt = new AlertDialog.Builder(this);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,10 +44,6 @@ public class adsYear1Sem1 extends AppCompatActivity {
 
         FstYr obj=new FstYr();
         double gpa = obj.GPA_odd("A", "A", "A", "A", "A", "A", "A", "A", "A");
-        calculate.setOnClickListener(v -> alrt.setTitle(R.string.app_name)
-                .setMessage(String.valueOf(gpa))
-                .setCancelable(false)
-                .setPositiveButton("Cancel", (y, d) -> y.cancel())
-                .show());
+        Toast.makeText(this, String.valueOf(gpa), Toast.LENGTH_SHORT).show();
     }
 }
