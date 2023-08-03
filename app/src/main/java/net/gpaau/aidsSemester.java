@@ -2,8 +2,8 @@ package net.gpaau;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -51,14 +51,7 @@ public class aidsSemester extends AppCompatActivity {
 		isem7 = new Intent(this, adsYear4Sem7.class);
 
         //Selection of semester let to do their jobs
-		try {
-			sem1.setOnClickListener(v -> {startActivity(isem1);
-				Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
-			});
-		}
-		catch (Exception e){
-			Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
-		}
+		sem1.setOnClickListener(v -> startActivity(isem1));
 
 		sem2.setOnClickListener(v -> startActivity(isem2));
 
