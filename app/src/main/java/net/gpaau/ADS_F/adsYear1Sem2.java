@@ -56,11 +56,11 @@ public class adsYear1Sem2 extends AppCompatActivity {
         double gpa= obj.GPA_even(HS3252,MA3251,PH3256,BE3251,GE3251,AD3251,GE3252,GE3271,AD3271,GE3272,NCC);
 
         calculate.setOnClickListener(v -> {
-            Toast.makeText(this, "sdfghjarr", Toast.LENGTH_SHORT).show();
             alrt.setTitle(R.string.app_name)
-                    .setMessage(String.valueOf(gpa))
-                    .setPositiveButton("Yes",(y,d)->y.cancel())
-                    .setCancelable(true)
+                    .setIcon(R.mipmap.ic_launcher_round)
+                    .setCancelable(false)
+                    .setNegativeButton("Close",(y,d)->y.dismiss())
+                    .setMessage("\n"+String.valueOf(gpa))
                     .show();
         });
     }
