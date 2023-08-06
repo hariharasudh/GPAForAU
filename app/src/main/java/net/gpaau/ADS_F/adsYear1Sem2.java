@@ -12,16 +12,16 @@ import net.gpaau.R;
 
 public class adsYear1Sem2 extends AppCompatActivity {
 
-//    TextView fill;
+    //Variable Declaration
     String HS3252,MA3251,PH3256,BE3251,GE3251,AD3251,GE3252,GE3271,AD3271,GE3272,NCC;
     Spinner HS3252Value,MA3251Value,PH3256Value,BE3251Value,GE3251Value,AD3251Value,GE3252Value,GE3271Value,AD3271Value,GE3272Value,NCCValue;
-
     Button calculate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ads_year1_sem2);
 
+        //Variable Mapping
         HS3252Value=findViewById(R.id.spinner);
         MA3251Value=findViewById(R.id.spinner7);
         PH3256Value=findViewById(R.id.spinner6);
@@ -35,6 +35,7 @@ public class adsYear1Sem2 extends AppCompatActivity {
         NCCValue=findViewById(R.id.spinner10);
         calculate = findViewById(R.id.button9);
 
+        //Getting values
         HS3252= (String) HS3252Value.getSelectedItem();
         MA3251= (String) MA3251Value.getSelectedItem();
         PH3256= (String) PH3256Value.getSelectedItem();
@@ -47,10 +48,13 @@ public class adsYear1Sem2 extends AppCompatActivity {
         GE3272= (String) GE3272Value.getSelectedItem();
         NCC= (String) NCCValue.getSelectedItem();
 
+        //Calling Class
         FstYr obj=new FstYr();
 
+        //Getting the calculated value
         double gpa= obj.GPA_even(HS3252,MA3251,PH3256,BE3251,GE3251,AD3251,GE3252,GE3271,AD3271,GE3272,NCC);
 
+        //Getting output from builder
         calculate.setOnClickListener(v ->{
             bldr bldro = new bldr(this);
             bldro.how(String.valueOf(gpa));
