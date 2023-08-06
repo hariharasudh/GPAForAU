@@ -3,40 +3,59 @@ package net.gpaau.ADS_F;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Spinner;
 
+import net.gpaau.ADS_B.ScndYr;
+import net.gpaau.GradeIO.bldr;
 import net.gpaau.R;
 
 public class adsYear2Sem3 extends AppCompatActivity {
 
-    String MA3354,CS3351,AD3391;
+    Spinner MA3354,CS3351,AD3391,AD3351,AD3301,AL3391,AD3381,AD3311,GE3361;
+
+    String MA3354Value,CS3351Value,AD3391Value,AD3351Value,AD3301Value,AL3391Value,AD3381Value,AD3311Value,GE3361Value;
+
+    Button calculate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ads_year2_sem3);
 
-//
-//        HS3252Value=findViewById(R.id.spinner);
-//        MA3251Value=findViewById(R.id.spinner7);
-//        PH3256Value=findViewById(R.id.spinner6);
-//        BE3251Value=findViewById(R.id.spinner5);
-//        GE3251Value=findViewById(R.id.spinner4);
-//        AD3251Value=findViewById(R.id.spinner3);
-//        GE3252Value=findViewById(R.id.spinner2);
-//        GE3271Value=findViewById(R.id.spinner1);
-//        AD3271Value=findViewById(R.id.spinner9);
-//        GE3272Value=findViewById(R.id.spinner8);
-//        NCCValue=findViewById(R.id.spinner10);
-//
-//        HS3252= (String) HS3252Value.getSelectedItem();
-//        MA3251= (String) MA3251Value.getSelectedItem();
-//        PH3256= (String) PH3256Value.getSelectedItem();
-//        BE3251= (String) BE3251Value.getSelectedItem();
-//        GE3251= (String) GE3251Value.getSelectedItem();
-//        AD3251= (String) AD3251Value.getSelectedItem();
-//        GE3252= (String) GE3252Value.getSelectedItem();
-//        GE3271= (String) GE3271Value.getSelectedItem();
-//        AD3271= (String) AD3271Value.getSelectedItem();
-//        GE3272= (String) GE3272Value.getSelectedItem();
-//        NCC= (String) NCCValue.getSelectedItem();
+        calculate=findViewById(R.id.button9);
+
+        MA3354=findViewById(R.id.spinner);
+        CS3351=findViewById(R.id.spinner7);
+        AD3391=findViewById(R.id.spinner6);
+        AD3351=findViewById(R.id.spinner5);
+        AD3301=findViewById(R.id.spinner4);
+        AL3391=findViewById(R.id.spinner3);
+        AD3381=findViewById(R.id.spinner2);
+        AD3311=findViewById(R.id.spinner1);
+        GE3361=findViewById(R.id.spinner8);
+
+        MA3354Value= (String) MA3354.getSelectedItem();
+        CS3351Value= (String) CS3351.getSelectedItem();
+        AD3391Value= (String) AD3391.getSelectedItem();
+        AD3351Value= (String) AD3351.getSelectedItem();
+        AD3301Value= (String) AD3301.getSelectedItem();
+        AL3391Value= (String) AL3391.getSelectedItem();
+        AD3381Value= (String) AD3381.getSelectedItem();
+        AD3311Value= (String) AD3311.getSelectedItem();
+        GE3361Value= (String) GE3361.getSelectedItem();
+
+        ScndYr obj =new ScndYr();
+
+        double gpa=obj.GPA_odd(MA3354Value,CS3351Value,AD3391Value,AD3351Value,AD3301Value,AL3391Value,AD3381Value,AD3311Value,GE3361Value);
+
+        calculate.setOnClickListener(v ->{
+            bldr bldro = new bldr(this);
+            bldro.how(String.valueOf(gpa));
+        });
+
+
+
+
     }
 }
