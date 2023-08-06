@@ -11,13 +11,14 @@ import net.gpaau.GradeIO.bldr;
 import net.gpaau.R;
 
 public class itYear3Sem5 extends AppCompatActivity {
+	//Variable Declaration
 	Spinner cs3591, it3501, cs3551,cs3691, pec1, pec2,it3511;
 	Button calculate;
 	@Override
 	protected void onCreate(Bundle savedInstance){
 		super.onCreate(savedInstance);
 		setContentView(R.layout.activity_it_year3_sem5);
-
+		//Variable Mapping
 		cs3591 = findViewById(R.id.spinner);
 		it3501 = findViewById(R.id.spinner7);
 		cs3691 = findViewById(R.id.spinner5);

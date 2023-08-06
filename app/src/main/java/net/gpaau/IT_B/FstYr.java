@@ -4,7 +4,7 @@ import androidx.annotation.Nullable;
 
 import net.gpaau.GradeIO.GradeIO;
 
-//Calculating marks for 1st year Faculty of Information and Communication ADS Engg
+//Calculating marks for 1st year Faculty of Information and Communication IT Engg
 public class FstYr {
 	GradeIO grd = new GradeIO();
 
@@ -23,6 +23,7 @@ public class FstYr {
 
 	//Calculating Marks for Even Semester including NCC
 	public double GPA_even(String hs3252, String ma3251, String ph3256, String be3251, String cs3251, String ge3251, String ge3252, String ge3271, String cs3271, String ge3272, @Nullable String ncc){
+		assert ncc != null;
 		double ui = grd.Grade_2(hs3252)+grd.Grade_4(ma3251)+grd.Grade_3(ph3256)+grd.Grade_3(be3251)+ grd.Grade_3(cs3251)+grd.Grade_4(ge3251)+grd.Grade_1(ge3252)+grd.Grade_2(ge3271)+grd.Grade_2(ge3272)+grd.Grade_2(cs3271)+grd.Grade_2(ncc);
 		float credit = 28;
 		return grd.round_off(ui/credit);

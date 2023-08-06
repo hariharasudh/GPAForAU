@@ -11,6 +11,7 @@ import net.gpaau.GradeIO.bldr;
 import net.gpaau.R;
 
 public class itYear3Sem6 extends AppCompatActivity {
+	//Variable Declaration
 	Spinner ccs356, it3681, oec, pec3, pec4, pec2, pec1, ncc;
 	Button calculate;
 
@@ -18,7 +19,7 @@ public class itYear3Sem6 extends AppCompatActivity {
 	protected void onCreate(Bundle savedInstance){
 		super.onCreate(savedInstance);
 		setContentView(R.layout.activity_it_year3_sem6);
-
+		//Variable Mapping
 		ccs356 = findViewById(R.id.spinner);
 		it3681 = findViewById(R.id.spinner2);
 		oec = findViewById(R.id.spinner7);

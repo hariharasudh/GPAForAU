@@ -11,13 +11,14 @@ import net.gpaau.GradeIO.bldr;
 import net.gpaau.R;
 
 public class itYear4Sem7 extends AppCompatActivity {
+	//Variable Declaration
 	Spinner ge3791,hsmc,oec1,oec2,oec3,it3711,it3811;
 	Button Calculate;
 	@Override
 	protected void onCreate(Bundle savedInstance){
 		super.onCreate(savedInstance);
 		setContentView(R.layout.activity_it_year4_sem7);
-
+		//Variable Mapping
 		ge3791 = findViewById(R.id.spinner);
 		hsmc = findViewById(R.id.spinner7);
 		oec1 = findViewById(R.id.spinner6);
@@ -26,7 +27,7 @@ public class itYear4Sem7 extends AppCompatActivity {
 		it3711 = findViewById(R.id.spinner3);
 		it3811 = findViewById(R.id.spinner2);
 		Calculate = findViewById(R.id.button9);
-
+		//Getting values
 		String st_ge3791 = ge3791.getSelectedItem().toString();
 		String st_hsmc = hsmc.getSelectedItem().toString();
 		String st_oec1 = oec1.getSelectedItem().toString();
@@ -34,7 +35,6 @@ public class itYear4Sem7 extends AppCompatActivity {
 		String st_oec3 = oec3.getSelectedItem().toString();
 		String st_it3711 = it3711.getSelectedItem().toString();
 		String st_it3811 = it3811.getSelectedItem().toString();
-
 		//Calling Class
 		FrthYr gap = new FrthYr();
 		//Getting the calculated value
