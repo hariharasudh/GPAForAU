@@ -1,6 +1,5 @@
 package net.gpaau.ADS_F;
 
-import android.app.AlertDialog;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -8,6 +7,7 @@ import android.widget.Spinner;
 import androidx.appcompat.app.AppCompatActivity;
 
 import net.gpaau.ADS_B.FstYr;
+import net.gpaau.GradeIO.bldr;
 import net.gpaau.R;
 
 public class adsYear1Sem1 extends AppCompatActivity {
@@ -41,17 +41,11 @@ public class adsYear1Sem1 extends AppCompatActivity {
         BS3171Value=(String) BS3171.getSelectedItem();
         GE3172Value=(String) GE3172.getSelectedItem();
 
-        AlertDialog.Builder alrt = new AlertDialog.Builder(this);
-
         FstYr obj=new FstYr();
         double gpa= obj.GPA_odd(HS3152Value,MA3151Value,PH3151Value,CY3151Value,GE3151Value,GE3152Value,GE3171Value,BS3171Value,GE3172Value);
-        calculate.setOnClickListener(v -> {
-            alrt.setTitle(R.string.app_name)
-                    .setIcon(R.mipmap.ic_launcher_round)
-                    .setCancelable(false)
-                    .setNegativeButton("Close",(y,d)->y.dismiss())
-                    .setMessage("\n"+String.valueOf(gpa))
-                    .show();
+        calculate.setOnClickListener(view -> {
+            bldr bldro = new bldr(this);
+            bldro.how(String.valueOf(gpa));
         });
     }
 }
