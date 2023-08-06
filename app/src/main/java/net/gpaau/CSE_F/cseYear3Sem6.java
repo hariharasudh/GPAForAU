@@ -27,7 +27,7 @@ public class cseYear3Sem6 extends AppCompatActivity {
 		pec5 = findViewById(R.id.spinner3);
 		pec6 = findViewById(R.id.spinner2);
 		ncc = findViewById(R.id.spinner1);
-
+		calculate = findViewById(R.id.button9);
 		//Getting values
 		String st_ccs356 = ccs356.getSelectedItem().toString();
 		String st_cs3691 = cs3691.getSelectedItem().toString();
