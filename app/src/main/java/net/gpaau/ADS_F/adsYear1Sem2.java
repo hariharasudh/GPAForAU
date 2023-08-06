@@ -1,15 +1,13 @@
 package net.gpaau.ADS_F;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.Toast;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import net.gpaau.ADS_B.FstYr;
+import net.gpaau.GradeIO.bldr;
 import net.gpaau.R;
 
 public class adsYear1Sem2 extends AppCompatActivity {
@@ -19,9 +17,6 @@ public class adsYear1Sem2 extends AppCompatActivity {
     Spinner HS3252Value,MA3251Value,PH3256Value,BE3251Value,GE3251Value,AD3251Value,GE3252Value,GE3271Value,AD3271Value,GE3272Value,NCCValue;
 
     Button calculate;
-
-    AlertDialog.Builder alrt = new AlertDialog.Builder(this);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +33,7 @@ public class adsYear1Sem2 extends AppCompatActivity {
         AD3271Value=findViewById(R.id.spinner9);
         GE3272Value=findViewById(R.id.spinner8);
         NCCValue=findViewById(R.id.spinner10);
+        calculate = findViewById(R.id.button9);
 
         HS3252= (String) HS3252Value.getSelectedItem();
         MA3251= (String) MA3251Value.getSelectedItem();
@@ -55,13 +51,9 @@ public class adsYear1Sem2 extends AppCompatActivity {
 
         double gpa= obj.GPA_even(HS3252,MA3251,PH3256,BE3251,GE3251,AD3251,GE3252,GE3271,AD3271,GE3272,NCC);
 
-        calculate.setOnClickListener(v -> {
-            alrt.setTitle(R.string.app_name)
-                    .setIcon(R.mipmap.ic_launcher_round)
-                    .setCancelable(false)
-                    .setNegativeButton("Close",(y,d)->y.dismiss())
-                    .setMessage("\n"+String.valueOf(gpa))
-                    .show();
+        calculate.setOnClickListener(v ->{
+            bldr bldro = new bldr(this);
+            bldro.how(String.valueOf(gpa));
         });
     }
 }
