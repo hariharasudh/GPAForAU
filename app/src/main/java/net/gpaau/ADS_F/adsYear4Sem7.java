@@ -1,11 +1,11 @@
 package net.gpaau.ADS_F;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Spinner;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import net.gpaau.ADS_B.FrthYr;
 import net.gpaau.GradeIO.bldr;

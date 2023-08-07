@@ -6,8 +6,8 @@ import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import net.gpaau.IT_B.ThrdYr;
 import net.gpaau.GradeIO.bldr;
+import net.gpaau.IT_B.ThrdYr;
 import net.gpaau.R;
 
 public class itYear3Sem6 extends AppCompatActivity {

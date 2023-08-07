@@ -1,10 +1,10 @@
 package net.gpaau.ADS_F;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Spinner;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import net.gpaau.ADS_B.ScndYr;
 import net.gpaau.GradeIO.bldr;
