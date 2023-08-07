@@ -2,11 +2,11 @@ package net.gpaau.Mech_B;
 
 import androidx.annotation.Nullable;
 
-import net.gpaau.GradeIO.GradeIO;
+import net.gpaau.GradeIO.CreditIO;
 
 public class ThrdYr {
 	//Calculating marks for 3rd year Faculty of Information and Communication IT Engg
-	GradeIO grd = new GradeIO();
+	CreditIO grd = new CreditIO();
 	//Calculating marks for ODD semester
 	public double GPA_odd(String me3591, String me3592, String pec1, String pec2, String pec3, String me3511, String me3581){
 		double ui = grd.Grade_4(me3591)+grd.Grade_3(me3592)+grd.Grade_3(pec1)+grd.Grade_3(pec2)+grd.Grade_3(pec3)+grd.Grade_1(me3511)+grd.Grade_2(me3581);

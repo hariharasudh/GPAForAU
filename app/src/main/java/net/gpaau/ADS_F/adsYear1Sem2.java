@@ -57,7 +57,7 @@ public class adsYear1Sem2 extends AppCompatActivity {
         //Getting output from builder
         calculate.setOnClickListener(v ->{
             bldr bldro = new bldr(this);
-            bldro.how(String.valueOf(gpa));
+            bldro.how("n");
         });
     }
 }

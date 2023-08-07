@@ -1,13 +1,17 @@
 package net.gpaau.GradeIO;
 
+import static java.math.RoundingMode.HALF_DOWN;
+
+import androidx.annotation.NonNull;
+
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 
 //Calculating the Grade by getting the inputs through Spinner and Receiving the outputs from the Constructor
-public class GradeIO {
-	double sub1 = 0;
+public class CreditIO {
+
 	/*Calculating the marks for 3 Credit Subject*/
-	public double Grade_3(String s) {
+	public double Grade_3(@NonNull String s) {
+		double sub1;
 		switch (s) {
 			case "O":
 				sub1 = 3 * 10;
@@ -30,7 +34,8 @@ public class GradeIO {
 		return sub1;
 	}
 	/*Calculating for 4 Credit*/
-	public double Grade_4(String s) {
+	public double Grade_4(@NonNull String s) {
+		double sub1;
 		switch (s) {
 			case "O":
 				sub1 = 4 * 10;
@@ -53,7 +58,8 @@ public class GradeIO {
 		return sub1;
 	}
 	/*Calculating credit for 2 Credit Subject*/
-	public double Grade_2(String s) {
+	public double Grade_2(@NonNull String s) {
+		double sub1;
 		switch (s) {
 			case "O":
 				sub1 = 2 * 10;
@@ -76,7 +82,8 @@ public class GradeIO {
 		return sub1;
 	}
 	/*Calculating Credit for 1 Credit Subject*/
-	public double Grade_1(String s) {
+	public double Grade_1(@NonNull String s) {
+		double sub1;
 		switch (s) {
 			case "O":
 				sub1 = 10;
@@ -98,7 +105,8 @@ public class GradeIO {
 		}
 		return sub1;
 	}
-	public double Grade_1$5(String s) {
+	public double Grade_1$5(@NonNull String s) {
+		double sub1;
 		switch (s) {
 			case "O":
 				sub1 = 1.5*10;
@@ -120,7 +128,8 @@ public class GradeIO {
 		}
 		return sub1;
 	}
-	public double Grade_10(String s) {
+	public double Grade_10(@NonNull String s) {
+		double sub1;
 		switch (s) {
 			case "O":
 				sub1 = 10*10;
@@ -144,6 +153,6 @@ public class GradeIO {
 	}
 	//Rounding off Purposes
 	public double round_off(double nmb){
-		return new BigDecimal(Double.toString(nmb)).setScale(3,RoundingMode.HALF_UP).doubleValue();
+		return new BigDecimal(Double.toString(nmb)).setScale(3,HALF_DOWN).doubleValue();
 	}
 }

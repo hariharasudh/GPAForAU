@@ -26,7 +26,7 @@ public class adsYear1Sem1 extends AppCompatActivity {
         MA3151=findViewById(R.id.spinner7);
         PH3151=findViewById(R.id.spinner6);
         CY3151=findViewById(R.id.spinner5);
-        GE3151=findViewById(R.id.spinner4);
+        GE3151=findViewById(R.id.spinner44);
         GE3152=findViewById(R.id.spinner3);
         GE3171=findViewById(R.id.spinner2);
         BS3171=findViewById(R.id.spinner1);

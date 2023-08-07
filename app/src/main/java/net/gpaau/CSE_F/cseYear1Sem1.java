@@ -7,7 +7,6 @@ import android.widget.Spinner;
 import androidx.appcompat.app.AppCompatActivity;
 
 import net.gpaau.CSE_B.FstYr;
-import net.gpaau.GradeIO.GradeIO;
 import net.gpaau.GradeIO.bldr;
 import net.gpaau.R;
 

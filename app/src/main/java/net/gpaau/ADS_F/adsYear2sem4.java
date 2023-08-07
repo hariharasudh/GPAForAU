@@ -3,7 +3,6 @@ package net.gpaau.ADS_F;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
 
@@ -32,6 +31,7 @@ public class adsYear2sem4 extends AppCompatActivity {
         NCC=findViewById(R.id.spinner2);
         AD3411=findViewById(R.id.spinner1);
         AD3461=findViewById(R.id.spinner8);
+        calculate = findViewById(R.id.button9);
 
         MA3391Value= (String) MA3391.getSelectedItem();
         AL3452Value= (String) AL3452.getSelectedItem();

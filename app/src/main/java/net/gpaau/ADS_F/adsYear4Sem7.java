@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
 
@@ -33,7 +32,6 @@ public class adsYear4Sem7 extends AppCompatActivity {
         OEC_3=findViewById(R.id.spinner5);
         OEC_4=findViewById(R.id.spinner4);
         AD3811=findViewById(R.id.spinner9);
-
         calculate=findViewById(R.id.button9);
 
         GE3791Value= (String) GE3791.getSelectedItem();

@@ -2,10 +2,10 @@ package net.gpaau.ECE_B;
 
 import androidx.annotation.Nullable;
 
-import net.gpaau.GradeIO.GradeIO;
+import net.gpaau.GradeIO.CreditIO;
 
 public class ThrdYr {
-	GradeIO grd = new GradeIO();
+	CreditIO grd = new CreditIO();
 	//Calculating marks for 3rd year Faculty of Information and Communication ECE Engg
 	//Calculating marks for ODD Semester
 	public double GPA_odd(String ec3501, String ec3552, String ec3551, String pec1, String pec2, String pec3, String ec3561){

@@ -30,6 +30,7 @@ public class adsYear3Sem6 extends AppCompatActivity {
         PEC_5=findViewById(R.id.spinner4);
         PEC_6=findViewById(R.id.spinner3);
         NCC=findViewById(R.id.spinner1);
+        calculate = findViewById(R.id.button9);
 
 
         CS3691Value= (String) CS3691.getSelectedItem();
